@@ -1,7 +1,7 @@
 Wordpress DNDCounter
 ====================
 
-Inspired to Author Page Views ( http://wordpress.org/plugins/author-page-views/ ), this Wordpress plugin keeps track of every single view of every single post of the blog. The home page and the single pages will be ignored.
+Inspired to <b>Author Page Views</b> ( http://wordpress.org/plugins/author-page-views/ ), this Wordpress plugin keeps track of every single view of every single post of the blog. The home page and the single pages will be ignored.
 
 On every post are incremented the user views count for that post and stored the user IP address with a custom expiration datetime (default: 1 day).
 On the Dashboard there is a new option that allows the admin to view a complete report per page (Post ID, Post Title, Views), filter per date range and export as a .CSV file.
