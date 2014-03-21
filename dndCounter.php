@@ -287,28 +287,6 @@
 
 			include plugin_dir_path( __FILE__ ) . 'views/admin-report.php';
 		}
-		
-		/******************************
-		*	Costom functions
-		*/
-		function dominos_popular_posts($number = 3){
-
-			$posts 		= self::get_popular_posts($number);
-
-			foreach($posts as $details){
-
-				echo '<a href="' . $details['link'] . '">';
-					echo '<li>';
-						echo $details['image'];
-
-						echo '<div class="tabContent">';
-							echo '<span class="comment">' . $details['title'] . '</span>';
-						echo '</div>';
-						echo '<br class="clear" />';
-					echo '</li>';
-				echo '</a>';
-			}
-		}
 	}
 	
 	new DNDCounter();
