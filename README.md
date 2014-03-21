@@ -1,4 +1,4 @@
-wordpress DNDCounter
+Wordpress DNDCounter
 ====================
 
 Inspired to Author Page Views ( http://wordpress.org/plugins/author-page-views/ ), this Wordpress plugin keeps track of every single view of every single post of the blog. The home page and the single pages will be ignored.
