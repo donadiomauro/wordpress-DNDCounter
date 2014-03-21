@@ -8,3 +8,28 @@ On the Dashboard there is a new option that allows the admin to view a complete 
 
 Is also available an internal function (added as Wordpress function) to get the most popular (the most viewed) posts.
 The number of popular posts is customizable and you are free to format the returned array as you prefer in your template.
+
+The function is the following
+
+<code>
+DNDCounter::get_popular_posts(number_of_posts);
+</code>
+
+where 'number_of_posts' if 3 by default.
+It returns an associative array with the following structure
+
+<code>
+$popular_posts[post_id]['image'] // post thumbnail image
+</code>
+
+<code>
+$popular_posts[post_id]['title'] // post title
+</code>
+
+<code>
+$popular_posts[post_id]['link'] // post link
+</code>
+
+<code>
+$popular_posts[post_id]['count'] // views count
+</code>
