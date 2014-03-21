@@ -15,7 +15,7 @@ The function is the following
 DNDCounter::get_popular_posts(number_of_posts);
 </code>
 
-where 'number_of_posts' if 3 by default.
+where <i>number_of_posts</i> if 3 by default.
 It returns an associative array with the following structure
 
 <code>
