@@ -25,7 +25,7 @@
 			add_action( 'wp_head', array( __CLASS__, 'new_view' ) );
 			
 			// Check for a CSV export request
-			add_action( 'admin_init', array( __CLASS__, 'maybe_export_csv' ) );
+			add_action( 'admin_init', array( __CLASS__, 'export_csv_request' ) );
 
 			// Add the report page
 			add_action( 'admin_menu', array( __CLASS__, 'add_menu_pages' ) );
@@ -233,7 +233,7 @@
 		/**
 		*	EXPORT
 		*/
-		public static function maybe_export_csv() {
+		public static function export_csv_request() {
 			if ( isset( $_GET['page'] ) && plugin_basename( __FILE__) == $_GET['page'] && isset( $_GET['export_csv'] ) ) {
 				$args = array(
 					'date_begin' => date( 'Y-m-d 0:0:0', self::get_date_begin() ),
