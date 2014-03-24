@@ -205,11 +205,12 @@
 				$authors = get_users( $user_args );
 			} else {
 				$authors = array( get_userdata( intval( $args['author'] ) ) );
-			}*/
+			}
+*/
 
 			$page_views		= array();
 
-			$data	= $wpdb->get_results('SELECT * FROM ' . $table_name . ' WHERE `view_date` BETWEEN "' . $args['date_begin'] . '" AND "' . $args['date_end'] . '"');
+			$data	= $wpdb->get_results('SELECT * FROM ' . $table_name . ' WHERE `view_date` BETWEEN "' . $args['date_begin'] . '" AND "' . $args['date_end'] . '" ORDER BY `view_count` DESC');
 
 			foreach ( $data as $page ) {
 				$page_views[$page->post_id]['pTitle']		= get_the_title($page->post_id);
